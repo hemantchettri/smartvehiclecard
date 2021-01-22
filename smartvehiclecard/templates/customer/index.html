@@ -1,0 +1,33 @@
+{% extends "admindashboard/dashboard.html" %}
+{% block content %}
+<table class="table table-bordered table-hover table-striped  table-borderless table-sm">
+    <thead class="thead-dark">
+        <tr>
+            <th>SN</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Email</th>
+            <th>Password</th>
+            <th>Confirm Password</th>
+
+        </tr>
+    </thead>
+    {% for data in customers %}
+    <tr>
+        <td>{{data.id}}</td>
+        <td>{{data.firstname}}</td>
+        <td>{{data.lastname}}</td>
+        <td>{{data.email}}</td>
+        <td>{{data.password}}</td>
+        <td>{{data.confirmpw}}</td>
+
+        <th>
+            <a href="update/{{data.id}}" class="btn btn-primary">edit</a>
+            |
+            <a href="delete/{{data.id}}" class="btn btn-success">delete</a>
+        </th>
+    </tr>
+    {% endfor %}
+</table>
+
+{% endblock %}

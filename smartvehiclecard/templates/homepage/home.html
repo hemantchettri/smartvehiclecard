@@ -1,0 +1,99 @@
+{% extends "layout.html" %} {% load static %} {% block content %}
+
+<title> SMART VEHICLE CARD - HOME </title>
+
+<style type="text/css">
+    /* ============ desktop view ============ */
+    
+    @media all and (min-width: 992px) {
+        .navbar .nav-item .dropdown-menu {
+            display: none;
+        }
+        .navbar .nav-item:hover .nav-link {
+            color: #D62226;
+        }
+        .navbar .nav-item:hover .dropdown-menu {
+            display: block;
+        }
+        .navbar .nav-item .dropdown-menu {
+            margin-top: 0;
+        }
+    }
+    /* ============ desktop view .end// ============ */
+</style>
+
+<div class="container">
+
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="">
+            <img src="{% static "images/logo.png" %}" alt="SMART VEHICLE CARD LOGO" width="200" height="110">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main_nav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="main_nav">
+
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a style="color: #D62226;" class="nav-link" href="#"> <strong> Add Fund </strong> </a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link  dropdown-toggle" href="#" data-toggle="dropdown"><i class="fa fa-user"
+                        style="font-size:20px;color:#D62226"></i> </a>
+                    <ul class="dropdown-menu dropdown-menu-right">
+                        <li>
+                            <a style="color: #D62226;" class="dropdown-item" href="profile"> <strong> Profile </strong> </a>
+                        </li>
+                        <li>
+                            <a style="color: #D62226;" class="dropdown-item" href="settings"> <strong> Settings</strong> </a>
+                        </li>
+                        <div class="dropdown-divider"></div>
+                        <li>
+                            <a style="color: #D62226;" class="dropdown-item" href="#"> <strong> Log out</strong> </a>
+                        </li>
+
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <!-- navbar-collapse.// -->
+    </nav>
+
+    <section class="section-content ">
+
+        <h1 class="text-center" style="color: #D62226; font-size: 30px;">Welcome XYZ</h1>
+
+    </section>
+    <section class="section-content ">
+
+        <h1 class="text-center" style="color: #D62226; font-size: 25px;">Amount XYZ</h1>
+
+    </section>
+</div>
+<!-- container //  -->
+
+<!-- Start of Transaction -->
+
+<div class='container'>
+    <div class="col-lg-12 border border-dark">
+        <!-- <class=" "> -->
+        <legend class='text-center'>Transaction</legend>
+        <p id="innerPara ">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque voluptatum voluptas, nulla nostrum incidunt placeat mollitia ea magni id animi voluptate ullam deserunt error ipsum vel exercitationem possimus temporibus tempora consectetur! Deserunt fuga
+            officia vitae aperiam sapiente, saepe ipsam! Voluptatibus laudantium necessitatibus eveniet voluptatem. Repudiandae eum necessitatibus non ipsa! Incidunt!
+        </p>
+        <p class="text-right">
+            <a href="# ">See more></a>
+        </p>
+    </div>
+</div>
+<!-- End of Transaction -->
+
+<!-- Start of Footer -->
+
+<div class="jumbotron text-center " style="margin-bottom:0 ">
+    <p>Footer</p>
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda, ducimus.
+</div>
+
+{% endblock content %}
